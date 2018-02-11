@@ -32,7 +32,7 @@ BUILD_ORG="${opt_org:-"${CI_DOCKER_ORGANIZATION}"}";
 [[ -z "${BUILD_VERSION// }" ]] && __error "Environment variable 'CI_BUILD_VERSION' missing or is empty";
 [[ -z "${BUILD_ORG// }" ]] && __error "Environment variable 'CI_DOCKER_ORGANIZATION' missing or is empty";
 
-TARBALL="${base_dir}/../dist/${BUILD_ORG}-${PROJECT_NAME}-${BUILD_VERSION}.tgz";
+TARBALL="${base_dir}/../dist/${PROJECT_NAME}-${BUILD_VERSION}.tgz";
 [ ! -f "${TARBALL}" ] && __error "cannot find file '${TARBALL}'." && exit 4;
 
 [[ ! $BUILD_VERSION =~ -snapshot$ ]] && \

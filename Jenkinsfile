@@ -10,8 +10,8 @@ node ("node") {
 	def ProjectName = "hubot"
 	def slack_notify_channel = null
 
-	def MAJOR_VERSION = 1
-	def MINOR_VERSION = 0
+	def MAJOR_VERSION = 2
+	def MINOR_VERSION = 19
 
 
 	properties ([
